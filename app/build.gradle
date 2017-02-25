@@ -1,0 +1,58 @@
+/*
+ * Copyright (c) 2017. Jahir Fiquitiva
+ *
+ * Licensed under the CreativeCommons Attribution-ShareAlike
+ * 4.0 International License. You may not use this file except in compliance
+ * with the License. You may obtain a copy of the License at
+ *
+ *    http://creativecommons.org/licenses/by-sa/4.0/legalcode
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'com.android.application'
+
+ext {
+    TARGET_SDK = 25
+    BUILD_TOOLS = "25.0.2"
+    ANDROID_SUPPORT_LIBS = "25.1.1"
+}
+
+android {
+    compileSdkVersion TARGET_SDK
+    buildToolsVersion BUILD_TOOLS
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    defaultConfig {
+        applicationId "jahirfiquitiva.walls.frames"
+        minSdkVersion 16
+        targetSdkVersion TARGET_SDK
+        versionCode 191
+        versionName "1.9.1"
+        vectorDrawables.useSupportLibrary = true
+        consumerProguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            zipAlignEnabled true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'me.jahirfiquitiva:Frames:1aeccd9'
+}

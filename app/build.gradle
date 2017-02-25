@@ -54,5 +54,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'me.jahirfiquitiva:Frames:1aeccd9'
+    compile 'me.jahirfiquitiva:Frames:1.0'
+    // TODO: Remove comment marks if you plan on implementing Firebase Notifications
+    // compile 'com.google.firebase:firebase-messaging:10.2.0'
 }
+
+// TODO: Remove comment marks if you plan on implementing Firebase Notifications
+// apply plugin: 'com.google.gms.google-services'

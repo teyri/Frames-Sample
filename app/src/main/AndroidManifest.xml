@@ -18,6 +18,10 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="jahirfiquitiva.walls.frames">
 
+    <!-- Uncomment if you're going to implement in-app purchases for donations
+    <uses-permission android:name="com.android.vending.BILLING" />
+    -->
+
     <application
             android:allowBackup="true"
             android:fullBackupContent="true"

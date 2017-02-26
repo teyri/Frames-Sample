@@ -7,7 +7,7 @@
 <h4 align="center">A full-of-features, easy-to-customize, free and open source, light-weight, Material Design dashboard to create Android Wallpapers apps with almost-null effort.</h4>
 
 <p align="center">
-	<a target="_blank" href="https://jitpack.io/#jahirfiquitiva/Frames/"><img src="https://img.shields.io/badge/JitPack-1.0-00C853.svg"></a>
+	<a target="_blank" href="https://jitpack.io/#jahirfiquitiva/Frames/"><img src="https://img.shields.io/badge/JitPack-1.2-00C853.svg"></a>
 	<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/legalcode"><img src="https://img.shields.io/badge/License-CC%20BY%20SA-01579B.svg"></a>
 	<img src="https://img.shields.io/badge/API-16%2B-7ac143.svg"/>
 	<a target="_blank" href="https://github.com/jahirfiquitiva/Frames-Sample" title="Sample App"><img src="https://img.shields.io/badge/SAMPLE-APP-34bf49.svg" /></a>
